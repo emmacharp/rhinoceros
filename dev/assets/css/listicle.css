@@ -1,12 +1,43 @@
 html {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.5em;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 600;
+	line-height: 1em;
+}
+
+h1 {
+	font-size: 3rem;
 }
 
 body {
-	max-width: 60ch;
+	max-width: 70ch;
 	margin: auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+hr {
+	height: 0;
+	border: 0;
+	border-top: 1px solid grey;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+section+section {
+	margin-top: 100px;
+}
+
+header img {
+	border-radius: 50%;
+	width: 3em;
+	height: 3em;
+	vertical-align: middle;
+	margin-right: 1em;
 }
