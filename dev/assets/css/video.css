@@ -1,34 +1,49 @@
 html {
 	font-family: Georgia, serif;
+	line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	line-height: 1em;
 }
 
 body {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	max-width: 100ch;
+	max-width: 85ch;
 	margin:auto;
 }
 
-header {
-	flex-basis: 100%;
-	flex-shrink: 0;
-	max-width: calc(50ch + 25ch + 50px);
-}
-
-main {
-	max-width: 50ch;
+h1 {
+	font-size: 3.5rem;
+	margin-top: 300px;
+	margin-bottom: 50px;
 }
 
 aside {
-	max-width: 25ch;
-	margin-left: 50px;
+	display: flex;
+	gap: 20px;
 }
 
-aside>article+article {
-	margin-top: 40px;
+aside>* {
+	flex: 33% 1 1;
+}
+
+main>p:first-of-type {
+	font-size: 1.5em;
+	line-height: 1.4em;
 }
 
 video {
-	max-width: 100%;
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
+
+hr {
+	height: 0;
+	border: 0;
+	border-top: 1px solid grey;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
